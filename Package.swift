@@ -49,9 +49,9 @@ let package = Package(
     ),
     .binaryTarget(
       name: "GoogleMobileAds",
-      // TODO(neycwang): Replace with the actual public URL.
-      url: "https://gad-repo.appspot.com/static/GoogleMobileAdsSdkIos-8.5.0-SPM.zip",
-      checksum: "3e207d319b3c44e13f2f22c229197aff626d4c518adcb3f08f0457f69688a4ae"
+      url:
+        "https://dl.google.com/googleadmobadssdk/71dacd3f781fa104/googlemobileadsios-spm-9.0.0.zip",
+      checksum: "71dacd3f781fa104acdee4b5c77f388a6507675f131cfe777e7c36721ef1c913"
     ),
   ]
 )

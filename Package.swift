@@ -29,7 +29,7 @@ let package = Package(
     .package(
       name: "GoogleAppMeasurement",
       url: "https://github.com/google/GoogleAppMeasurement.git",
-      "7.0.0"..<"9.0.0"
+      "7.0.0"..<"10.0.0"
     ),
     .package(
       name: "GoogleUserMessagingPlatform",

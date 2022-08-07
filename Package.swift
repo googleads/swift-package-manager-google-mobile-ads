@@ -45,7 +45,10 @@ let package = Package(
         .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement"),
         .product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"),
       ],
-      path: "GoogleMobileAdsTarget"
+      path: "GoogleMobileAdsTarget",
+      linkerSettings: [
+        .linkedFramework("JavaScriptCore"),
+      ]
     ),
     .binaryTarget(
       name: "GoogleMobileAds",

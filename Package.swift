@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
   name: "GoogleMobileAds",
-  platforms: [.iOS(.v10)],
+  platforms: [.iOS(.v11)],
   products: [
     .library(
       name: "GoogleMobileAds",
@@ -50,8 +50,8 @@ let package = Package(
     .binaryTarget(
       name: "GoogleMobileAds",
       url:
-        "https://dl.google.com/googleadmobadssdk/567a6d1bc2a926b0/googlemobileadsios-spm-10.3.0.zip",
-      checksum: "567a6d1bc2a926b0c85ee65ae5c4778688fb82115771e61beb4250387d56335e"
+        "https://dl.google.com/googleadmobadssdk/f5104b7f7c509eb7/googlemobileadsios-spm-10.4.0.zip",
+      checksum: "f5104b7f7c509eb7c61fec2abd4a5eb542e5d15e9cc48d47c15fe54acbce9048"
     ),
   ]
 )

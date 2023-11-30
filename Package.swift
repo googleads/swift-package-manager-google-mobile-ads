@@ -27,22 +27,16 @@ let package = Package(
   ],
   dependencies: [
     .package(
-      name: "GoogleAppMeasurement",
-      url: "https://github.com/google/GoogleAppMeasurement.git",
-      "7.0.0"..<"11.0.0"
-    ),
-    .package(
       name: "GoogleUserMessagingPlatform",
       url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
       "1.1.0"..<"3.0.0"
-    ),
+    )
   ],
   targets: [
     .target(
       name: "GoogleMobileAdsTarget",
       dependencies: [
         .target(name: "GoogleMobileAds"),
-        .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement"),
         .product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"),
       ],
       path: "GoogleMobileAdsTarget"

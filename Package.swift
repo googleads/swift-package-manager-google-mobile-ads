@@ -40,9 +40,6 @@ let package = Package(
         .product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"),
       ],
       path: "GoogleMobileAdsTarget"
-      resources: [
-        .copy("Privacy/PrivacyInfo.xcprivacy")
-      ]
     ),
     .binaryTarget(
       name: "GoogleMobileAds",

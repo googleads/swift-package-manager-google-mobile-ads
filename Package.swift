@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
   name: "GoogleMobileAds",
-  platforms: [.iOS(.v11)],
+  platforms: [.iOS(.v12)],
   products: [
     .library(
       name: "GoogleMobileAds",
@@ -27,22 +27,16 @@ let package = Package(
   ],
   dependencies: [
     .package(
-      name: "GoogleAppMeasurement",
-      url: "https://github.com/google/GoogleAppMeasurement.git",
-      "7.0.0"..<"11.0.0"
-    ),
-    .package(
       name: "GoogleUserMessagingPlatform",
       url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
       "1.1.0"..<"3.0.0"
-    ),
+    )
   ],
   targets: [
     .target(
       name: "GoogleMobileAdsTarget",
       dependencies: [
         .target(name: "GoogleMobileAds"),
-        .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement"),
         .product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"),
       ],
       path: "GoogleMobileAdsTarget"
@@ -50,8 +44,8 @@ let package = Package(
     .binaryTarget(
       name: "GoogleMobileAds",
       url:
-        "https://dl.google.com/googleadmobadssdk/4a6713c8d4ac7656/googlemobileadsios-spm-10.14.0.zip",
-      checksum: "4a6713c8d4ac765635c8972931b1fb2b5729a6a40dd01a1a50aeaf4ca5c28e15"
+        "https://dl.google.com/googleadmobadssdk/f9f8d9fb7601dcdd/googlemobileadsios-spm-11.0.0.zip",
+      checksum: "f9f8d9fb7601dcdd76c34dc1d352a992fa14182a830895a9cff297240f3bf9e5"
     ),
   ]
 )

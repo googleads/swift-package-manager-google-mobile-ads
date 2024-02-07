@@ -7,4 +7,4 @@ Google Mobile Ads SDK now officially supports installation via
 
 ## Requirements
 
--   Requires Xcode 12.5 or above
+-   Requires Xcode 15.1 or above

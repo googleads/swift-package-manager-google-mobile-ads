@@ -44,8 +44,8 @@ let package = Package(
     .binaryTarget(
       name: "GoogleMobileAds",
       url:
-        "https://dl.google.com/googleadmobadssdk/e53a0402a42ef1cd/googlemobileadsios-spm-11.9.0.zip",
-      checksum: "e53a0402a42ef1cd30e5e9ba28c7c4e476253d8baee52d59d29a1ea08c7c042b"
+        "https://dl.google.com/googleadmobadssdk/94f8c64ee70b51a1/googlemobileadsios-spm-11.10.0.zip",
+      checksum: "94f8c64ee70b51a18d7fe130d6a145b47ee8c30babe63a68782a0d2e883386ed"
     ),
   ]
 )

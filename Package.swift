@@ -29,7 +29,7 @@ let package = Package(
     .package(
       name: "GoogleUserMessagingPlatform",
       url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
-      "1.1.0"..<"3.0.0"
+      "1.1.0"..<"4.0.0"
     )
   ],
   targets: [

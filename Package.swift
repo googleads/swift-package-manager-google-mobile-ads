@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
   name: "GoogleMobileAds",
-  platforms: [.iOS(.v12)],
+  platforms: [.iOS(.v13)],
   products: [
     .library(
       name: "GoogleMobileAds",

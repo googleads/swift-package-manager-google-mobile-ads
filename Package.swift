@@ -39,13 +39,42 @@ let package = Package(
         .target(name: "GoogleMobileAds"),
         .product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"),
       ],
-      path: "GoogleMobileAdsTarget"
+      path: "GoogleMobileAdsTarget",
+      // System frameworks and libraries required by GoogleMobileAds. Explicitly declared here to
+      // support users with Clang modules disabled (e.g., Unity-exported Xcode projects), where
+      // module map autolinking does not apply.
+      linkerSettings: [
+        .linkedLibrary("sqlite3"),
+        .linkedLibrary("z"),
+        .linkedFramework("AdSupport"),
+        .linkedFramework("AudioToolbox"),
+        .linkedFramework("AVFoundation"),
+        .linkedFramework("CFNetwork"),
+        .linkedFramework("CoreGraphics"),
+        .linkedFramework("CoreMedia"),
+        .linkedFramework("CoreTelephony"),
+        .linkedFramework("CoreVideo"),
+        .linkedFramework("Foundation"),
+        .linkedFramework("JavaScriptCore"),
+        .linkedFramework("MarketplaceKit"),
+        .linkedFramework("MediaPlayer"),
+        .linkedFramework("MessageUI"),
+        .linkedFramework("MobileCoreServices"),
+        .linkedFramework("Network"),
+        .linkedFramework("QuartzCore"),
+        .linkedFramework("SafariServices"),
+        .linkedFramework("Security"),
+        .linkedFramework("StoreKit"),
+        .linkedFramework("SystemConfiguration"),
+        .linkedFramework("UIKit"),
+        .linkedFramework("WebKit"),
+      ]
     ),
     .binaryTarget(
       name: "GoogleMobileAds",
       url:
-        "https://dl.google.com/googleadmobadssdk/310516d18f0d600c/googlemobileadsios-spm-13.11.0.zip",
-      checksum: "310516d18f0d600c9e45ed42b955a6b8ec52108d380f7cd8ed1e424e9d3fec22"
+        "https://dl.google.com/googleadmobadssdk/6b8bfa69d6b4b848/googlemobileadsios-spm-13.12.0.zip",
+      checksum: "6b8bfa69d6b4b8484328803fc5f71d5735caf7ce01acff8abb76e8b73c83e005"
     ),
   ]
 )
